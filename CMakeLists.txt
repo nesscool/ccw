@@ -1,5 +1,5 @@
-project(ccw_project)
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.26)
+project(ccw_project LANGUAGES CXX)
 
 enable_testing()
 

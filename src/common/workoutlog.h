@@ -1,7 +1,7 @@
 #ifndef CCW_WORKOUTLOG_H
 #define CCW_WORKOUTLOG_H
 
-#include "ccw_workout.h"
+#include "workout.h"
 
 #include <vector>
 

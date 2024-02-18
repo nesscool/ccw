@@ -1,7 +1,7 @@
 #ifndef CCW_WORKOUT_H
 #define CCW_WORKOUT_H
 
-#include "WorkoutTypes.h"
+#include "workouttype.h"
 
 #include <vector>
 
@@ -17,7 +17,7 @@ public:
 private:
   WorkoutType workoutType;
 
-  vector<int> reps;
+	std::vector<int> reps;
   // add a date object
   // add a start time
   // add a stop time
