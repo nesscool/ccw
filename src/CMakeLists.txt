@@ -1,0 +1,2 @@
+add_subdirectory(workouthistoryprovider)
+add_subdirectory(workoutmanager)

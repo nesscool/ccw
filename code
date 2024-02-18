@@ -1,0 +1,12 @@
+#!/bin/bash
+
+. ./creds
+PROJECT=ccw
+
+docker run --user $(id -u):$(id -g) -it -e NAME=$NAME -e EMAIL=$EMAIL -e PROJECT=$PROJECT \
+ --mount type=bind,source=${PWD}/../$PROJECT,target=/$PROJECT \
+ --mount type=bind,source=${HOME},target=/home/${USER} \
+ --mount type=bind,source=/etc/group,target=/etc/group \
+ --mount type=bind,source=/etc/passwd,target=/etc/passwd \
+ --mount type=bind,source=/etc/shadow,target=/etc/shadow \
+ --workdir /$PROJECT basecpp:aha
